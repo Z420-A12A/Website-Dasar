@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+/*navigasi atas*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color : rgb(16, 15, 15);
+    font-family: 'Poppins', sans-serif;
+}
+
+.webname {
+    font-size: 2.0rem;
+    margin: .5rem;
+    color: whitesmoke;
+}
+
+.navbar-list ul{
+    margin : 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-list li{
+    list-style: none;
+}
+
+.navbar-list li a {
+    color : rgb(172, 112, 136);
+    text-decoration: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 20px;
+    display:block;
+}
+
+.navbar-list li:hover{
+    background-color: bisque;
+}
+
+.hamburger-toggle{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display : none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.hamburger-toggle .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*akhir navigasi atas*/
+
+/* banner */
+.banner{
+    position: relative;
+    background: url(gambar/F175.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+    opacity: 0.7;
+    display: flex;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Vollkorn', serif;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(217, 206, 63);
+    font-weight: 700 bold;
+    text-transform: uppercase;
+}
+
+.container h1{
+    margin: 0;
+    font-size: 100px;
+}
+
+.container h1 span {
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.cen {
+    margin:20px;
+    display: block;
+    font-size: 55px;
+}
+
+
+/*akhir banner */
+
+/*3 box di home (bawah banner)*/
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.box-box{
+    width :350px;
+    background-color: rgb(228, 220, 207);
+    border: 6px solid rgb(32, 83, 117);
+    margin: 25px;
+}
+
+.box-img{
+    width: 100%;
+    height: auto;
+}
+
+.box-img img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit:cover;
+}
+
+.box-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-text .judul{
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.box-text .judul:hover{
+    color: rgb(49, 157, 160);
+    transition: all ease 0.5s;
+}
+
+.box-text p{
+    color: #9b9b9b;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+
+.box-text a{
+    color: #0f0f0f;
+}
+
+.box-text a:hover{
+    color: rgb(120, 28, 104);
+    transition: all ease 0.5s;
+}
+/*akhir 3 box*/
+
+/*footer*/
+footer {
+    background: rgb(32, 83, 117);
+}
+
+footer p{
+    color: whitesmoke;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+/*akhir footer*/
+
+/*box driver.html*/
+.container-article{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap:1.5rem;
+    background:#eee;
+}
+
+.container-article .kolom-kiri .box1{
+    width:100%;
+    padding:2rem;
+    background:#fff;
+    border:var(--border);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container-article .kolom-kiri .judul{
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    color:black;
+}
+
+.container-article .kolom-kiri .image{
+    height: 40rem;
+    width:100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.container-article .kolom-kiri p{
+    color:var(--light-color);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding:1rem 0;
+}
+
+.container-article .kolom-kanan .box2{
+    border:var(--border);
+    border-radius: .5rem;
+    overflow:hidden;
+    background:#fff;
+    margin-bottom: 1.5rem;
+}
+
+.container-article .kolom-kanan .box2 .judul{
+    padding:1.5rem;
+    font-size: 2rem;
+    color:#fff;
+    background:black;
+    text-transform: capitalize;
+}
+
+.container-article .kolom-kanan .box2 .about-me{
+    text-align: center;
+    padding:1rem 1.5rem;
+}
+
+.container-article .kolom-kanan .box2 img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:1rem 0;
+}
+
+.container-article .kolom-kanan .box2 p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding:1rem;
+}
+
+.container-article .kolom-kanan .box2 .medsos li{
+    margin: 6px;
+    list-style: none;
+    display: inline-block;
+}
+
+.container-article .kolom-kanan .box2 .medsos li a {
+    color : grey;
+    font-size: 65px;
+    text-decoration: none;
+    transition: all ease-in-out 260ms; 
+}
+
+.container-article .kolom-kanan .box2 .medsos li a:hover{
+    color : burlywood;
+}
+
+/*media query*/
+@media (max-width: 500px){
+    .hamburger-toggle{
+        display: flex;
+    }
+
+    .navbar-list{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-list ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-list li {
+        text-align: center;
+    }
+
+    .navbar-list li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-list.active{
+        display: flex;
+    }
+}
+/* media query*/
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+   
+    .container-article{
+        grid-template-columns: 2fr 1fr;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .container-article{
+        grid-template-columns: 1fr;
+        gap:0;
+    }
+
+    .container-article .kolom-kiri .box1 .image{
+        height: 30rem;;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
